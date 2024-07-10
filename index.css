@@ -1,0 +1,76 @@
+.body{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.animate{
+    background-color: aqua;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+   
+}
+.animate:hover {
+    box-shadow: 20px 23px 39px red;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    background: blue;
+    
+}
+.square:hover{
+    transition: 3s ease-in;
+    transform: rotate(10deg);
+}
+.resize{
+    resize: both;
+}
+.container{
+    display: flex;
+    gap: 5px;
+    border: blue 4px solid;
+}
+.cards{
+    min-width: 100px;
+    min-height: 200px;
+    background-color: red;
+    border-radius: 16px;
+    flex: 1;
+    transition: 0.4s ease-out ;
+    font-size: larger;
+    text-align: center;
+}
+.cards:hover{
+    flex: 3;
+    cursor: pointer;
+}
+
+.skew{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+.skew:hover{
+    transition: 1s ease-in;
+    transform: skew(15deg,5deg);
+}
+
+
+.trans{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(213, 10, 156);
+}
+.trans:hover{
+    transition: 1s ease-in;
+    transform: translateY(-5px);
+}
+
