@@ -36,7 +36,7 @@
 .container{
     display: flex;
     gap: 5px;
-    border: blue 4px solid;
+    
 }
 .cards{
     min-width: 100px;
@@ -72,5 +72,21 @@
 .trans:hover{
     transition: 1s ease-in;
     transform: translateY(-5px);
+}
+
+
+/* animations of buttons  */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.btn1 button{
+    background-color: rgb(6, 223, 187);
+    margin-top: 20px;
+    padding: 5px 8px;
+    border: none;
 }
 
