@@ -1,92 +1,146 @@
-.body{
-    margin: 0;padding: 0;
+.body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.animate{
+
+.animate {
     background-color: aqua;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: none;
-   
+
 }
+
 .animate:hover {
     box-shadow: 20px 23px 39px red;
 }
 
-.square{
+.square {
     width: 100px;
     height: 100px;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     overflow: auto;
     background: blue;
-    
+
 }
-.square:hover{
+
+.square:hover {
     transition: 3s ease-in;
     transform: rotate(10deg);
 }
-.resize{
+
+.resize {
     resize: both;
 }
-.container{
+
+.container {
     display: flex;
     gap: 5px;
-    
+
 }
-.cards{
+
+.cards {
     min-width: 100px;
     min-height: 200px;
     background-color: red;
     border-radius: 16px;
     flex: 1;
-    transition: 0.4s ease-out ;
+    transition: 0.4s ease-out;
     font-size: larger;
     text-align: center;
 }
-.cards:hover{
+
+.cards:hover {
     flex: 3;
     cursor: pointer;
 }
 
-.skew{
+.skew {
     height: 100px;
     width: 100px;
     background-color: green;
 }
-.skew:hover{
+
+.skew:hover {
     transition: 1s ease-in;
-    transform: skew(15deg,5deg);
+    transform: skew(15deg, 5deg);
 }
 
 
-.trans{
+.trans {
     height: 100px;
     width: 100px;
     background-color: rgb(213, 10, 156);
 }
-.trans:hover{
+
+.trans:hover {
     transition: 1s ease-in;
     transform: translateY(-5px);
 }
 
 
 /* animations of buttons  */
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
 
-.btn1 button{
+.btn1 button {
     background-color: rgb(6, 223, 187);
     margin-top: 20px;
-    padding: 5px 8px;
+    padding: 10px 20px;
     border: none;
+    font-size: large;
+}
+
+.btn1 button::before {
+    content: "";
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ------------------------------------------------------------ */
+
+.heading{
+    font-size: 50px;
+    color: white;
+    position: relative;
+    background-color: rgb(85, 78, 78);
+    padding: 20px 30px;
+}
+
+.heading::before{
+    content: '';
+    height: 10px;
+    background-color: rgb(249, 249, 85);
+    width: 0px;
+    position: absolute;
+    bottom: 0;right: 0;
+    transition: all 0.4s ease;
+}
+.heading::after{
+    content: '';
+    height: 10px;
+    background-color: rgb(249, 249, 85);
+    width: 0px;
+    position: absolute;
+    top: 0;left: 0;
+    transition: all 0.4s ease;
+}
+.heading:hover::before{
+    width: 100%;
+}
+.heading:hover::after{
+    width: 100%;
 }
 
