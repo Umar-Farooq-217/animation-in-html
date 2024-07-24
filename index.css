@@ -179,8 +179,8 @@ z-index: -1;
 
 /* ---------------------btn3-------------------------- */
 .btn3{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     font-size: large;
     color: blue;
     border-radius: 50%;
@@ -190,6 +190,9 @@ z-index: -1;
     border: 2px solid red;
     z-index: 1;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn3::before{
     content: '';
@@ -202,9 +205,13 @@ z-index: -1;
     top: 0;left: 0;
     z-index: -1;
     animation: 0.5s ease;
-
+opacity: 0;
     
 }
 .btn3:hover::before{
    transform: scale(0.8);
+   opacity: 1;
+}
+.btn3:hover{
+    color: white;
 }
