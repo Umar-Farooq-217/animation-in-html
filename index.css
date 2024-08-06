@@ -248,3 +248,24 @@ opacity: 0;
 .btn4:hover::before{
     width: 170px;
 }
+
+
+/* -----------------cards--------------------- */
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    gap: 22px;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+  
+}
+ .car{
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    height: 200px;
+    
+
+}
