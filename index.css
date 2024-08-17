@@ -249,23 +249,71 @@ opacity: 0;
     width: 170px;
 }
 
-
-/* -----------------cards--------------------- */
-
-.main{
+.image{
+    width: 600px;
+    height: 300px;
     display: flex;
-    justify-content: space-around;
-    gap: 22px;
-    flex-wrap: wrap;
-    background-color: aquamarine;
-  
+    margin: auto;
+   
 }
- .car{
-    flex-grow: 1;
-    flex-basis: 200px;
-    background-color: blueviolet;
-    border-radius: 20px;
-    height: 200px;
-    
+img {
+    Border-image:fill 0 linear-gradient(rgba(0, 0, 0, 0.859),#a50404);
+   
 
 }
+
+
+/* -------------btn5-------------- */
+
+.btn5{
+    padding: 20px 35px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.btn5::before{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;
+    background-color: linear-gradient(45deg,blue,pink,yellow) ;
+/* z-index: -1; */
+
+
+
+
+}
+
+@keyframes btnScroll {
+    0%,50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.con5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loader{
+    width: 100px;height: 100px;
+    border-radius: 50%;
+    border: 15px solid #ddd;
+    border-top-color: black;
+    border-left-color: rgb(202, 13, 13);
+    border-right-color: rgb(44, 13, 202);
+    border-bottom-color: rgb(60, 202, 13);
+    animation: rotate 1s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);    }
+}
+
+

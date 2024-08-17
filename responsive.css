@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border: 4px solid black;
+}
+
+.items {
+    background-color: blue;
+    flex-basis: 300px;
+    flex-grow: 1;
+    color: white;
+}
