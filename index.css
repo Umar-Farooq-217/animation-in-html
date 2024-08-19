@@ -310,66 +310,72 @@ img {
     border-right-color: rgb(44, 13, 202);
     border-bottom-color: rgb(60, 202, 13);
     animation: rotate 1s linear infinite;
-}
-@keyframes rotate{
-    100%{
-        transform: rotate(360deg);    }
+}@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.animate{
+.animate {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-   
-
-
 }
-.item1{
+
+.item1 {
     border: 3px solid white;
     width: 180px;
     height: 180px;
     border-radius: 50%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    border-top-color: rgb(255, 0, 187);
-    animation: rotate 2s  infinite;
+    border-top-color: rgb(255, 0, 187); /* Pink color */
+    border-bottom-color: rgb(255, 0, 187); /* Pink color */
+    animation: rotate 2s infinite;
 }
-.item2{
+
+.item2 {
     margin: 10px;
     border: 3px solid white;
     width: 160px;
     height: 160px;
     border-radius: 50%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    border-bottom-color: rgb(0, 255, 17);
-    animation: rotate 4s  infinite;
+    border-left-color: rgb(0, 255, 34); /* Match with .item1 */
+    border-right-color: rgb(0, 255, 17); /* Green color */
+    animation: rotate 2s infinite;
 }
-.item3{
+
+.item3 {
     margin: 10px;
     border: 3px solid white;
     width: 140px;
     height: 140px;
     border-radius: 50%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    border-left-color: rgb(40, 5, 214);
-    animation: rotate 6s  infinite;
+    border-top-color: rgb(40, 5, 214); /* Blue color */
+    border-bottom-color: rgb(40, 5, 214); /* Blue color */
+    animation: rotate 2s infinite;
 }
-.item4{
+
+.item4 {
     margin: 10px;
     border: 3px solid white;
-    border-right-color: red;
-    animation: rotate 6s  infinite;
+    border-right-color: rgb(249, 6, 6); /* Match with .item3 */
+    border-left-color: red; /* Red color */
+    animation: rotate 2s infinite;
     width: 120px;
     height: 120px;
     border-radius: 50%;
 }
+
 
 
