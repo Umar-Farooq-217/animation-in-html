@@ -326,9 +326,9 @@ img {
 }
 
 .item1 {
-    border: 3px solid white;
-    width: 180px;
-    height: 180px;
+    border: 6px solid white;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -340,9 +340,9 @@ img {
 
 .item2 {
     margin: 10px;
-    border: 3px solid white;
-    width: 160px;
-    height: 160px;
+    border: 6px solid white;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -354,9 +354,9 @@ img {
 
 .item3 {
     margin: 10px;
-    border: 3px solid white;
-    width: 140px;
-    height: 140px;
+    border: 6px solid white;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -368,12 +368,12 @@ img {
 
 .item4 {
     margin: 10px;
-    border: 3px solid white;
+    border: 6px solid white;
     border-right-color: rgb(249, 6, 6); /* Match with .item3 */
     border-left-color: red; /* Red color */
     animation: rotate 2s infinite;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 
