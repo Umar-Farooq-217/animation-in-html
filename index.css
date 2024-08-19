@@ -298,7 +298,7 @@ img {
 
 .con5{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .loader{
@@ -314,6 +314,62 @@ img {
 @keyframes rotate{
     100%{
         transform: rotate(360deg);    }
+}
+
+.animate{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+
+
+}
+.item1{
+    border: 3px solid white;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-top-color: rgb(255, 0, 187);
+    animation: rotate 2s  infinite;
+}
+.item2{
+    margin: 10px;
+    border: 3px solid white;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-bottom-color: rgb(0, 255, 17);
+    animation: rotate 4s  infinite;
+}
+.item3{
+    margin: 10px;
+    border: 3px solid white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-left-color: rgb(40, 5, 214);
+    animation: rotate 6s  infinite;
+}
+.item4{
+    margin: 10px;
+    border: 3px solid white;
+    border-right-color: red;
+    animation: rotate 6s  infinite;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 
 
