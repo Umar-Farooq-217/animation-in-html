@@ -309,6 +309,7 @@ img {
     border-left-color: rgb(202, 13, 13);
     border-right-color: rgb(44, 13, 202);
     border-bottom-color: rgb(60, 202, 13);
+    box-shadow: 13px 23px 79px blue inset;
     animation: rotate 1s linear infinite;
 }@keyframes rotate {
     100% {
@@ -375,6 +376,47 @@ img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+}
+
+/* =======================First CARd ================== */
+.firstCard{
+   
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    position: relative;
+
+}
+.firsth{
+    font-size: 40px;
+}
+.firstp{
+    font-size: 30px;
+}
+
+.firstCard::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 9px;
+    background: linear-gradient(90deg,red,rgb(161, 45, 45),rgb(172, 85, 85));
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: hue-rotate 3s linear infinite;
+}
+@keyframes hue-rotate {
+    to{
+        filter: hue-rotate(90deg);
+    }
 }
 
 
